@@ -1,1 +1,6 @@
-I am Kei Vang and this is the root of my website.
+<!DOCTYPE html>
+<html>
+	<body>
+	 <p>I am Kei Vang and this is the root of my website.</p>
+	</body>
+</html>
