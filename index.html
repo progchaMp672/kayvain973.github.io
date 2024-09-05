@@ -33,6 +33,18 @@
                 <a href="https://progchamp672.github.io/" target="_new">My Github.io Page!</a>
             </nav>
             <p>This website was created by Vain Corporation 2024 ©</p>
+            <a id = "validation_link_html" href = "">
+                <img style="border:0;width:88px;height:31px" src="images/html_valdation_button.gif">
+            </a>
+            <a id = "validation_link_css" href = "">
+                <img style="border:0;width:88px;height:31px" src="images/validation_button_css_rectangle_blue.gif">
+            </a>
         </footer>
+        <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w2.org/css-validator/validator?uri=" +location.href);
+        
+        
+        </script>
     </body>
 </html>
