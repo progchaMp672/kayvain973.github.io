@@ -7,15 +7,36 @@
             body {
                 background-color: #99a3a3;
                 color: #3f032f;
-                font-family: sans-serif;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             header,main,footer{
                 width: 95%;
                 max-width: 1200px;
                 margin: 0 auto;
             }
-            a {
+            .nav-bar a {
                 color: black;
+                padding: 10px;
+                margin: 10px;
+                text-decoration: none;
+                border: 1px solid black;
+                display: inline-block;
+                transition: color 1s;
+            }
+            .nav-box {
+                color: black;
+                border: 1px solid black;
+            }
+            .nav-box:hover {
+                border-color: rgba(62, 62, 78, 0.236);
+                transform: scale(1.05);
+                box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+            }
+            nav {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 10px auto;
+                background-color: slategray;
             }
         </style>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -24,15 +45,18 @@
         <header>
             <h1>Knowledgeable Viper Books ⚡︎</h1>
             <h2>"Where Wisdom Strikes with Every Page"</h2>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="introduction.html">Introduction</a>
-                <a href="contract.html">Contract</a>
-                <a href="about.html">About</a>
-                <a href="website_evaluations.html">Website Evaluations</a>
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-box">Home</a>
+                <a href="introduction.html" class="nav-box">Introduction</a>
+                <a href="contract.html" class="nav-box">Contract</a>
+                <a href="about.html" class="nav-box">About</a>
+                <a href="website_evaluations.html" class="nav-box">Website Evaluations</a>
+                <a href="tables.html" class="nav-box">Company Tables</a>
+                <a href="forms.html" class="nav-box">Company Forms</a>
             </nav>
-            <nav>
-                <a href="stuff/index.htm" target="_blank">ohgodno</a>
+            <nav class="nav-bar">
+                <a href="stuff/index.htm" target="_blank" class="nav-box">Crappy</a>
+                <a href="kvangbooks.com/index.html" target="_blank" class="nav-box">KVang Books</a>
             </nav>
         </header>
         <main>
@@ -42,7 +66,7 @@
             </p>
         </main>
         <footer>
-            <p>This website was created by Vain Corporation 2024 ©</p>
+            <p>Created by Vain Corporation 2024 ©</p>
             <a id="validation-link-html">
                 <img src="images/html_validation_button.gif" alt="html-button">
             </a>
