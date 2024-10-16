@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kei's Hobby Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            display: none;
+            padding: 50px;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(18, 66, 98);
+            flex-grow: 1;
+        }
+        #page1 { background-color: red;
+                
+         }
+        #page2 { background-color: orange; 
+
+        }
+        #page3 { background-color: yellow; color: black; 
+
+        }
+        #page4 { background-color: green; 
+
+        }
+        #page5 { background-color: blue; 
+
+        }
+        #page6 { background-color: indigo; 
+
+        }
+        #page7 { background-color: violet; 
+
+        }
+        #page8 { background-color: darkgreen;
+
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" onclick="showPage('page1')">Page 1</a>
+    <a href="#" onclick="showPage('page2')">Page 2</a>
+    <a href="#" onclick="showPage('page3')">Page 3</a>
+    <a href="#" onclick="showPage('page4')">Page 4</a>
+    <a href="#" onclick="showPage('page5')">Page 5</a>
+    <a href="#" onclick="showPage('page6')">Page 6</a>
+    <a href="#" onclick="showPage('page7')">Page 7</a>
+    <a href="#" onclick="showPage('page8')">AI-Prompts</a>
+</nav>
+
+<section id="page1">
+    <h2>Page 1: Home</h2>
+    <p>This is the first page, styled with the color red.</p>
+</section>
+<section id="page2">
+    <h2>Page 2: Who</h2>
+    <p>This is the second page, styled with the color orange.</p>
+</section>
+<section id="page3">
+    <h2>Page 3: What</h2>
+    <p>This is the third page, styled with the color yellow.</p>
+</section>
+<section id="page4">
+    <h2>Page 4: When</h2>
+    <p>This is the fourth page, styled with the color green.</p>
+</section>
+<section id="page5">
+    <h2>Page 5: Where</h2>
+    <p>This is the fifth page, styled with the color blue.</p>
+</section>
+<section id="page6">
+    <h2>Page 6: How</h2>
+    <p>This is the sixth page, styled with the color indigo.</p>
+</section>
+<section id="page7">
+    <h2>Page 7: Why</h2>
+    <p>This is the seventh page, styled with the color violet.</p>
+</section>
+<section id="page8">
+    <h2>AI-Prompts</h2>
+    <p>These are the prompts for any AI used for this assignment.</p>
+</section>
+
+<footer>
+    &copy; 2024 Rainbow Pages. All rights reserved.
+</footer>
+
+<script>
+    function showPage(pageId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(pageId).style.display = 'block';
+    }
+
+    // Show the first page by default
+    showPage('page1');
+</script>
+
+</body>
+</html>
