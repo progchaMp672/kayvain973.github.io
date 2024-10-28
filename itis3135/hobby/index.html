@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-around;
+    display: flex; 
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color:rgb(104, 145, 116);
+}
+section {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(18, 66, 98);
+    flex-grow: 1;
+    text-align: left;
+}
+#page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8 {
+    background: linear-gradient(to right, rgb(121, 105, 105), rgb(18, 66, 98));
+    color: #F0EAD6;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        color: black;
+    }
+    th, td {
+        border: 2px solid #333;
+        padding: 15px;
+        text-align: left;
+    }
+    th {
+        background-color: #444;
+        color: white;
+        font-weight: bold;
+    }
+    td {
+        background-color: #f2f2f2;
+    }
+    tbody tr:nth-child(even) td {
+        background-color: #e9e9e9;
+    } 
+.img1 {
+    width: 100%; /* Make images responsive */
+    height: auto; 
+    max-width: 800px; /* Set a maximum width for smaller images */
+}  
+.img2 {
+    max-width: 70%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}  
+.img3 {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+    float: right;
+}
+.genre-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Space above the table */
+    }
+
+    .genre-table th, .genre-table td {
+    border: 2px solid #333; /* Border color */
+    padding: 12px;
+    text-align: left;
+    color: black;
+    }
+
+    .genre-table th {
+    background-color: #444; /* Header background color */
+    color: white;
+    font-weight: bold;
+    }
+
+    .genre-table td {
+    background-color: #f2f2f2; /* Body row background color */
+    }
+
+    .genre-table tbody tr:nth-child(even) td {
+    background-color: #e9e9e9; /* Alternating row colors */
+    }
+.my-slides {
+    display: none;
+    text-align: center;
+}
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+form {
+      width: 100%;
+      border: 2px solid #333;
+      padding: 20px;
+      background-color: #f2f2f2;
+      color: black;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    form input,
+    form select,
+    form textarea,
+    form button {
+    box-sizing: border-box;
+    }
+
+    form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+    }
+
+    form input[type="text"],
+    form select,
+    form textarea {
+    width: 100%;
+    background-color: #e9e9e9;
+    color: black;
+    }
+
+    form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+    figcaption {
+        font-style: italic;
+    }
+    figure {
+        text-align: center;
+    }
+    </style>
+            <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Kei's Hobby Website</title>
+</head>
+<body>
+
+<nav>
+    <a id="link-page1" href="#">Home</a>
+    <a id="link-page2" href="#">About Me</a>
+    <a id="link-page3" href="#">My Favorite Genres</a>
+    <a id="link-page4" href="#">Best Times Playing</a>
+    <a id="link-page5" href="#">Where I Discovered Games</a>
+    <a id="link-page6" href="#">How I Choose Games</a>
+    <a id="link-page7" href="#">Why I Love Games</a>
+    <a id="link-page8" href="#">AI-Prompts</a>
+</nav>
+
+<section id="page1">
+    <h2>Home</h2>
+    <figure class="my-slides fade">
+        <img src="images/steam_games.jpg" alt="an image of steam games" class="img1">
+        <figcaption>My Steam Library</figcaption>
+    </figure>
+    <figure class="my-slides fade">
+        <img src="images/steam_games2.jpg" alt="an image of steam games" class="img1">
+        <figcaption>More of my Steam Library</figcaption>
+    </figure>
+    <figure class="my-slides fade">
+        <img src="images/tloz_books.jpg" alt="books of TLOZ" class="img1">
+        <figcaption>Books of TLOZ Game</figcaption>
+    </figure>
+    <p>Hi! This site is all about me talking about my deep love for games! It goes from video games, tabletop games and even card games! And I even talk about some games that I personally love so much that I can remember story beats and specific game mechanics that I love a lot!<p></p>Go ahead and take a look around and look at the other pages for some more specific information about why I love gaming and some of the games mentioned! Additionally, if you can, please fill out some of the fields and take a look at the tables! I would like to see if you share similar interests and love games as much as I do! </p>
+</section>
+<section id="page2">
+    <h2>About Me</h2>
+    <p>Hi! I am Kei Vang! And I have loved playing games for a long time ever since I was young! I grew up with many family members playing them. I distinctly remember a game on the Nintendo 64 which was the first Super Smash Bros that I played as a child, which led me down a path of loving how games are!<p></p>I love how they give entertainment and how we can use them as an art form to display a unique experience that only games can give us! I've also played so many different games up until now where I remember when we first got the first PS3 ever and played with old consoles like the N64, the PS2, the very first Nintendo DS, the old Gameboys and more!</p>
+    <figure>
+        <img src="images/ds_on_games.jpg" alt="an image of my ds on games" class="img2">
+        <figcaption>My DS on Games</figcaption>
+    </figure>
+</section>
+<section id="page3">
+    <h2>My Favorite Genres</h2>
+    <p>I've played many games during my life. While I have many favorite genres of games that I enjoy like strategy games like Fire Emblem or action games like Ninja Gaiden, I always loved playing RPG's. It doesn't matter if it was a western RPG like Dragon's Dogma, Fallout, Skyrim or a japanese RPG like the Tales of series, Dragon Quest, or Final Fantasy. I am always drawn towards games that allows me to do things my way or to watch a story unfold before me. </p>
+    <table class="genre-table">
+        <thead>
+            <tr>
+                <th>Genre</th>
+                <th>Ranking</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>RPGs</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Strategy</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Action</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Management</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Rougelike</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Visual Novel</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+    </table>
+    <figure>
+    <img src="images/game_collection.jpg" alt="a large collection of games" class="img2">
+    <figcaption>My collection of games</figcaption>
+    </figure>
+</section>
+<section id="page4">
+    <h2>When were my Best Times Playing Games</h2>
+    <p>I always had a blast playing games on my own and experiencing how a game was meant to be played. Awesome stories, great characters, and morals that are either good or questionable based on the overarching message of the game.<p></p> But, even though I love playing single player games that have deep and meaningful messages, I will always love playing with friends, family, and strangers in video games as it is always a treat to experience something enjoyable with them and create memories when we can't be together in that moment.</p>
+    <figure>
+        <img src="images/ps3controllers.jpg" alt="an image of ps3 controllers" class="img2">
+        <figcaption>My PS3 Controllers</figcaption>
+    </figure>
+</section>
+<section id="page5">
+    <h2>Where I First Discovered Games</h2>
+    <p>I was a very small child when I first saw my Dad play an MMORPG called Two Moons. He was playing with his cousins and brothers at the time but he let me watch him play and it was so cool watching the cool animations for its time on the small desktop screen we had at home.<br>Soon after, I played my very first game of The Incredible Hulk which was on the first XBox and just ran around helping people and breaking tanks. After this, I played some more games like Burnout 2, Crash Bandicoot, Conker: Live and Reloaded, and Halo 2 which only spurred my love even more!</p>
+    <form action="/submit_experience" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="game-experience">First Gaming Experience:</label>
+        <select id="game-experience" name="game_experience" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="video games">Video Games</option>
+          <option value="tabletop">Tabletop Games</option>
+          <option value="card games">Card Games</option>
+          <option value="none">None</option>
+          <option value="other">Other</option>
+        </select>
+      
+        <label for="description">Describe your first experience (optional):</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+      
+        <button type="submit">Submit</button>
+      </form>
+    <figure>
+        <img src="images/dsgames.jpg" alt="an image of ds games" class="img2">
+        <figcaption>My DS Games</figcaption>
+    </figure>
+</section>
+<section id="page6">
+    <h2>How I Choose my Games</h2>
+    <p>I choose my games based on if it meets the critera of having a story. It doesn't even need to be a good story, just a way for me to understand characters or the world that the creators made for their game. After that, then comes gameplay and how fun it is to understand and mold a certain playstyle that I like to undertake depending on what I want to do.<p></p>A game that made me like stories like these is an indie game called Undertale. Such a good message about choosing what to do and thinking about your actions as you befriend odd creatures and has a good story despite being a small game. With an alternate route being a story of tragedy as you cut through monsters that you knew before and being humbled by the game as the difficulty of the game spikes at certain parts as you play the villian.</p>
+    <figure>
+        <img src="images/undertale_drawing.jpg" alt="drawing of flowey" class="img2">
+        <figcaption>My drawing of an Undertale character</figcaption>
+    </figure>
+</section>
+<section id="page7">
+    <h2>Why I Continued to Love Gaming</h2>
+    <p>I've loved games for a long, long time. Where each and every game brings a uniqueness to the hobby. Whether it be a grand story having multiple games dedicated to that story or having such a good gameplay loop where it's so fine tuned, it never gets boring or even a simple game that has a good message behind it!<p></p>A game that I distinctly remember that has a good moral behind it combined with good gameplay was the game Celeste. To always believe in yourself despite the literal challenge of the mountain in the game, and the metaphorical mountain that you must overcome in your mind. That is what drives me to continue to love games and so long as games have good stories, with a tragic story with real consequences or a feel-good story that makes you feel warm and fuzzy on the inside. </p>
+    <figure>
+        <img src="images/my_ps3.jpg" alt="image of my ps3" class="img2">
+        <figcaption>My PS3</figcaption>
+    </figure>
+</section>
+<section id="page8">
+    <h2>AI-Prompts</h2>
+    <figure>
+        <figcaption>This is a table listing out the prompts used and what AI was used to generate.</figcaption>
+    </figure>
+    <table>
+        <thead>
+            <tr>
+                <th>Prompt</th>
+                <th>AI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Make a valid HTML 5 webpage of 7 sample pages with each page being a section with a page name h2 within after the colors of the rainbow and a navbar that when clicked hides all the other pages.</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>Change the divs to sections.</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>Add in a footer with copyright.</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>Can you make it so that the navigation bar is always evenly spaced out with the tags listed?</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>for this small section, can you make a table? have it separated by blocks with some titles that lists out my favorite genres from lowest to highest.</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>can you make this section a small slide show with images adjusted to be small?<p></p>for the slideshow, can you enlarge the images slightly?</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>give me a good text color that contrasts with this background color in html. rgb(121, 105, 105)</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>can you make the pages all the same color with one single thing that calls it</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>can you make a gradient color with the existing colors? do not change anything else about the code, and only show me the parts you adjusted.</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>generate me a form in html that takes in information about the users first time experiencing games with options that say video games, tabletop, card games, none or other.</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>can you correct this with the correct code needed? do not change the code unless needed to correct the code. Warning: Inline script [ onclick="showPage('page1')" ] cannot be used.</td>
+                <td>ChatGPT</td>
+            </tr>
+            <tr>
+                <td>Inline script [ onclick="showPage('page1')" ] cannot be used. fix this.</td>
+                <td>ChatGPT</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<footer>
+    &copy; 2024 KVang Books. All rights reserved.<br>
+    <a id="validation-link-html">
+        <img src="images/html_validation_button.gif" alt="html-button" class="html-button">
+    </a>
+    <a id="validation-link-css">
+        <img src="images/validation_button_css_rectangle_blue.gif" alt="css-button" class="css-button">
+    </a>
+</footer>
+
+<script>
+    function showPage(pageId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => {
+            section.style.display = 'none';
+        });
+
+
+        // Show the selected section
+        document.getElementById(pageId).style.display = 'block';
+    }
+
+    // Show the first page by default
+    showPage('page1');
+
+    let slideIndex = 0;
+
+    function showSlides() {
+    const slides = document.getElementsByClassName("my-slides");
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    slideIndex++;
+    
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    
+    slides[slideIndex - 1].style.display = "block";
+    
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+    showSlides();
+
+    // Attach event listeners to each navigation link
+    document.querySelectorAll("nav a").forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        showPage(link.id.replace("link-", ""));
+    });
+});
+
+
+
+    document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w2.org/css-validator/validator?uri=" +location.href);
+</script>
+
+</body>
+</html>

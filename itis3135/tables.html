@@ -89,59 +89,59 @@
     <table border="1">
         <thead>
             <tr>
-                <th scope="col">Category</th>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Years of Service</th>
-                <th scope="col">Monthly Salary</th>
+                <th id="category">Category</th>
+                <th id="name">Name</th>
+                <th id="email">Email</th>
+                <th id="years">Years of Service</th>
+                <th id="salary">Monthly Salary</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td scope="row" rowspan="2">Management</td>
-                <td>John Doe</td>
-                <td>johndoe@gmail.com</td>
-                <td>5</td>
-                <td>$5000</td>
+                <td headers="category" scope="row" rowspan="2">Management</td>
+                <td headers="name">John Doe</td>
+                <td headers="email">johndoe@gmail.com</td>
+                <td headers="years">5</td>
+                <td headers="salary">$5000</td>
             </tr>
             <tr>
-                <td>Paul Johnson</td>
-                <td>pjohnson@abccompany.com</td>
-                <td>20</td>
-                <td>$7000</td>
+                <td headers="name">Paul Johnson</td>
+                <td headers="email">pjohnson@abccompany.com</td>
+                <td headers="years">20</td>
+                <td headers="salary">$7000</td>
             </tr>
             <tr>
-                <td scope="row" rowspan="2">Engineering</td>
-                <td>Alice Williams</td>
-                <td>alicew@xyzinc.com</td>
-                <td>7</td>
-                <td>$5500</td>
+                <td headers="category" scope="row" rowspan="2">Engineering</td>
+                <td headers="name">Alice Williams</td>
+                <td headers="email">alicew@xyzinc.com</td>
+                <td headers="years">7</td>
+                <td headers="salary">$5500</td>
             </tr>
             <tr>
-                <td>Mike Brown</td>
-                <td>mike.brown@enterprise.com</td>
-                <td>25</td>
-                <td>$8000</td>
+                <td headers="name">Mike Brown</td>
+                <td headers="email">mike.brown@enterprise.com</td>
+                <td headers="years">25</td>
+                <td headers="salary">$8000</td>
             </tr>
             <tr>
-                <td scope="row" rowspan="2">Sales</td>
-                <td>Jane Smith</td>
-                <td>janesmith@yahoo.com</td>
-                <td>12</td>
-                <td>$6000</td>
+                <td headers="category" scope="row" rowspan="2">Sales</td>
+                <td headers="name">Jane Smith</td>
+                <td headers="email">janesmith@yahoo.com</td>
+                <td headers="years">12</td>
+                <td headers="salary">$6000</td>
             </tr>
             <tr>
-                <td>Robert Wilson</td>
-                <td>rwilson@gmail.com</td>
-                <td>2</td>
-                <td>$4000</td>
+                <td headers="name">Robert Wilson</td>
+                <td headers="email">rwilson@gmail.com</td>
+                <td headers="years">2</td>
+                <td headers="salary">$4000</td>
             </tr>
             <tr>
-                <td scope="row">Support</td>
-                <td>Susan Davis</td>
-                <td>susand@yahoo.com</td>
-                <td>18</td>
-                <td>$6500</td>
+                <td headers="category" scope="row">Support</td>
+                <td headers="name">Susan Davis</td>
+                <td headers="email">susand@yahoo.com</td>
+                <td headers="years">18</td>
+                <td headers="salary">$6500</td>
             </tr>
         </tbody>
         <tfoot>
@@ -153,9 +153,6 @@
         </tfoot>
     </table>
 </figure>
-
-
-
         </main>
         <footer>
             <p><a href="kvangbooks.com/index.html" target="_blank">KVang Books</a>-Where Every Story Finds Its Reader. ©</p>
@@ -169,8 +166,6 @@
         <script>
         document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w2.org/css-validator/validator?uri=" +location.href);
-        
-        
         </script>
     </body>
 </html>
