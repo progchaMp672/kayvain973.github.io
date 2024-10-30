@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kei Vang's ITIS 3135 FirstScripts</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #99a3a3;
+            color: #3f032f;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header, main, footer {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 1200px) {
+            header, main, footer {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header, main, footer {
+                width: 100%;
+            }
+
+            .nav-bar a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header, main, footer {
+                width: 100%;
+            }
+
+            .nav-bar a {
+                padding: 8px;
+            }
+        }
+
+        .nav-bar a {
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            border: 1px solid black;
+            display: inline-block;
+            transition: color 1s;
+        }
+
+        .nav-box {
+            color: black;
+            border: 1px solid black;
+        }
+
+        .nav-box:hover {
+            border-color: rgba(62, 62, 78, 0.236);
+            transform: scale(1.05);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: slategray;
+        }
+        .button-style {
+        color: black;
+        padding: 10px;
+        margin: 10px;
+        text-decoration: none;
+        border: 1px solid black;
+        display: inline-block;
+        transition: color 1s, transform 0.2s, box-shadow 0.2s;
+        background-color: slategray; /* Match the nav bar background */
+    }
+
+        .button-style:hover {
+        border-color: rgba(62, 62, 78, 0.236);
+        transform: scale(1.05);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Kei Vangs Knowledgeable Viper ⚡︎ ITIS 3135</h1>
+        <h2>"Where Wisdom Strikes with Every Page"</h2>
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-box">Home</a>
+            <a href="introduction.html" class="nav-box">Introduction</a>
+            <a href="contract.html" class="nav-box">Contract</a>
+            <a href="about.html" class="nav-box">About</a>
+            <a href="website_evaluations.html" class="nav-box">Website Evaluations</a>
+            <a href="tables.html" class="nav-box">Company Tables</a>
+            <a href="forms.html" class="nav-box">Company Forms</a>
+            <a href="firstscripts.html" class="nav-box">First Scripts</a>
+        </nav>
+        <nav class="nav-bar">
+            <a href="stuff/index.htm" target="_blank" class="nav-box">Crappy</a>
+            <a href="kvangbooks.com/index.html" target="_blank" class="nav-box">KVang Books</a>
+            <a href="hobby/index.html" target="_blank" class="nav-box">Hobby</a>
+            <a href="emmet.html" target="_blank">Emmet</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to the First Scripts Page!</h2>
+        <h3 id="date-display"></h3>
+        
+        <form id="user-info-form">
+            <label for="userName">Enter your name:</label>
+            <input type="text" id="user-name" required>
+            
+            <label for="userMood">How are you feeling?</label>
+            <input type="text" id="user-mood" required>
+            
+            <label for="favoriteNumber">Enter your favorite number (0-10):</label>
+            <input type="number" id="favorite-number" min="0" max="10" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3 id="greeting"></h3>
+
+        <button id="knowledge-bites-btn" class="button-style">Knowledge Bites</button>
+        <button id="gripping-books-btn" class="button-style">Gripping Books</button>
+        <button id="scales-btn" class="button-style">Scales</button>
+        <button id="vipers-btn" class="button-style">Vipers</button>
+        <button id="favorite-polygon-btn" class="button-style">Favorite Polygon</button>
+    </main>
+    <footer>
+        <p>Created by Vain Corporation 2024 ©</p>
+        <a id="validation-link-html">
+            <img src="images/html_validation_button.gif" alt="html-button" class="html-button">
+        </a>
+        <a id="validation-link-css">
+            <img src="images/validation_button_css_rectangle_blue.gif" alt="css-button" class="css-button">
+        </a>
+    </footer>
+    <script>
+function displayDateTime() {
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateTimeString = `Today is ${now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})} on ${now.toLocaleDateString('en-US', options)}`;
+    document.getElementById('date-display').innerText = dateTimeString;
+}
+
+// Handle form submission
+document.getElementById('user-info-form').addEventListener('submit', function(event) { 
+    event.preventDefault();
+    const userName = document.getElementById('user-name').value;
+    const userMood = document.getElementById('user-mood').value;
+    document.getElementById('greeting').innerText = `Kei Vangs Knowledgeable Viper welcomes you, ${userName}! We're glad you are ${userMood}!`;
+});
+
+// Functions for the buttons
+function knowledgeBites() {
+    const facts = [
+        "Honey never spoils!",
+        "Octopuses have three hearts.",
+        "Bananas are berries, but strawberries aren't!",
+        "A group of flamingos is called a 'flamboyance.'"
+    ];
+    alert(facts[Math.floor(Math.random() * facts.length)]);
+}
+
+function grippingBooks() {
+    const books = [
+        "The Great Gatsby by F. Scott Fitzgerald",
+        "1984 by George Orwell",
+        "To Kill a Mockingbird by Harper Lee",
+        "The Catcher in the Rye by J.D. Salinger",
+        "The Ranger's Apprentice by John Flanagan",
+        "White Wolf by David Gemmel",
+        "The Swords of Night and Day by David Gemmel"
+    ];
+    alert(books[Math.floor(Math.random() * books.length)]);
+}
+
+function scales() {
+    const ratings = [
+        "This book is as exciting as a snail race!",
+        "A rollercoaster of emotions - if the rollercoaster were broken!",
+        "Five stars for the cover art alone!",
+        "I laughed, I cried, I almost fell asleep!"
+    ];
+    alert(ratings[Math.floor(Math.random() * ratings.length)]);
+}
+
+function vipers() {
+    const jokes = [
+        "Why did the viper break up with its partner? Because it found them too constricting!",
+        "What do you call a snake that's a magician? A boa-dini!",
+        "Why don't vipers ever get lost? Because they always follow their hiss-terical instincts!"
+    ];
+    alert(jokes[Math.floor(Math.random() * jokes.length)]);
+}
+
+function favoritePolygon() {
+    let number = Math.abs(Math.round(document.getElementById('favorite-number').value));
+    const polygonNames = ["", "monogon", "bigon", "trigon", "quadrilateral", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
+    if (number < polygonNames.length) {
+        alert(`You entered ${number}. The polygon with ${number} sides is called a ${polygonNames[number]}.`);
+    } else {
+        alert("Sorry, I don't have a polygon name for that number!");
+    }
+}
+
+// Event listeners for buttons
+document.getElementById('knowledge-bites-btn').addEventListener('click', knowledgeBites);
+document.getElementById('gripping-books-btn').addEventListener('click', grippingBooks);
+document.getElementById('scales-btn').addEventListener('click', scales);
+document.getElementById('vipers-btn').addEventListener('click', vipers);
+document.getElementById('favorite-polygon-btn').addEventListener('click', favoritePolygon);
+
+// Call function to display date and time
+displayDateTime();
+
+    </script>
+</body>
+</html>
