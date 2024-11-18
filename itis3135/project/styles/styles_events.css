@@ -1,0 +1,161 @@
+body {
+    background: linear-gradient(to right, rgb(238, 188, 169), rgb(235, 219, 205));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    header {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    main {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1200px) {
+    header, main, footer {
+        width: 95%;
+        }
+    }
+
+    @media (max-width: 768px) {
+    header, main, footer {
+        width: 100%;
+    }
+
+    .nav-bar a {
+        display: block;
+        margin: 5px 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+    header, main, footer {
+        width: 100%;
+        }
+
+    .nav-bar a {
+        padding: 8px;
+        }
+    }
+
+    .nav-bar a {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    transition: color 1s;
+    }
+
+    .nav-box {
+    color: black;
+    border: 1px solid black;
+    }
+
+    .nav-box:hover {
+    border-color: rgba(62, 62, 78, 0.236);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: slategray;
+    }  
+
+    /* Event Page Styles */
+.event-info, .previous-events, .possible-reappearance {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-info p, .previous-events li, .possible-reappearance p {
+    margin: 10px 0;
+}
+
+.previous-events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.previous-events li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.previous-events li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background-color: #2f4f4f; /* Dark Slate Gray for contrast */
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+footer .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .footer-links a:hover {
+    color: #f0a500; /* Golden color for hover effect */
+}
+
+footer .contact-info {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+footer .social-links {
+    margin-top: 15px;
+}
+
+footer .social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+    color: #f0a500; /* Golden color for hover effect */
+}
+
+footer .footer-note {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}

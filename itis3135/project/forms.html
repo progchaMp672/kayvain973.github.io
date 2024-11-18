@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Forms</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/styles_forms.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Forms</h1>
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-box">Home</a>
+                <a href="about.html" class="nav-box">About</a>
+                <a href="projects.html" class="nav-box">Projects</a>
+                <a href="blog.html" class="nav-box">Blog</a>
+                <a href="events.html" class="nav-box">Events</a>
+                <a href="forms.html" class="nav-box">Forms</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Forms</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890"  required><br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+            
+                <!-- Radio buttons -->
+                <fieldset>
+                  <legend>Preferred Contact Method:</legend>
+                  <input type="radio" id="contact-email" name="contact-method" value="Email" required>
+                  <label for="contact-email">Email</label><br>
+            
+                  <input type="radio" id="contact-phone" name="contact-method" value="Phone" required>
+                  <label for="contact-phone">Phone</label><br>
+            
+                  <input type="radio" id="contact-none" name="contact-method" value="None" required>
+                  <label for="contact-none">None</label><br>
+                </fieldset><br>
+                
+                <!-- Buttons -->
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+              </form>
+
+        </main>
+        <footer>
+            <section>
+                <!-- Contact Information -->
+                <p class="contact-info">
+                    Contact me: cool@gmail.com<br>
+                    Call me: 1-800-321-3124
+                </p>
+
+                <!-- Social Media Links -->
+                <section class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                </section>
+
+                <!-- Footer Note -->
+                <p class="footer-note">&copy; 2024 KVangbooks. All rights reserved.</p>
+            </section>
+        </footer>
+    </body>
+</html>

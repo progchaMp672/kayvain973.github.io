@@ -1,0 +1,130 @@
+body {
+    background-color: #99a3a3;
+    color: #3f032f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  header, nav, main, footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  nav {
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: slategray;
+    text-align: center;
+  }
+  
+  .nav-bar a {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    transition: color 1s;
+  }
+  
+  .nav-box {
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .nav-box:hover {
+    border-color: rgba(62, 62, 78, 0.236);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  }
+  
+  form {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    border-color: #333;
+    outline: none;
+    background-color: #e0f7fa;
+  }
+  
+  @media (max-width: 768px) {
+    header, main, footer {
+      width: 95%;
+    }
+  
+    .nav-bar a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header, main, footer {
+      width: 100%;
+    }
+  
+    .nav-bar a {
+      padding: 8px;
+    }
+  }
+  
