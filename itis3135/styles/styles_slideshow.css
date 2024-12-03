@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    background-color: #99a3a3;
+    color: #3f032f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    header, main, footer {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    header, main, footer {
+        width: 100%;
+    }
+
+    .nav-bar a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header, main, footer {
+        width: 100%;
+    }
+
+    .nav-bar a {
+        padding: 8px;
+    }
+}
+
+/* Navigation Bar Styles */
+.nav-bar a {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    transition: color 1s;
+}
+
+.nav-box {
+    color: black;
+    border: 1px solid black;
+}
+
+.nav-box:hover {
+    border-color: rgba(62, 62, 78, 0.236);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation container styling */
+nav {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: slategray;
+}
+
+/* Slideshow Styles */
+.image-container {
+    margin: 20px auto;
+    position: relative;
+    max-width: 600px;
+}
+
+#main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#caption {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.thumbnails {
+    margin-top: 20px;
+}
+
+#thumbnail-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#thumbnail-list li {
+    cursor: pointer;
+}
+
+#thumbnail-list img {
+    height: 60px; /* Thumbnail height */
+    width: auto;
+    border-radius: 5px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#thumbnail-list img:hover {
+    border-color: #007BFF;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+    color: #3f032f;
+}
+
+/* Footer (if needed) */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #3f032f;
+    background-color: slategray;
+    border-top: 1px solid black;
+}

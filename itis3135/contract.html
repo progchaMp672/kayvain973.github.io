@@ -5,38 +5,84 @@
         <meta charset="utf-8">
         <style>
             body {
-                background-color: #99a3a3;
-                color: #3f032f;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #99a3a3;
+            color: #3f032f;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
             }
-            header,main,footer{
-                width: 95%;
-                max-width: 1200px;
-                margin: 0 auto;
+
+            header, nav, main, footer {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
             }
-            .nav-bar a {
-                color: black;
-                padding: 10px;
-                margin: 10px;
-                text-decoration: none;
-                border: 1px solid black;
-                display: inline-block;
-                transition: color 1s;
+
+            h2, h3 {
+            text-align: center;
+            margin: 10px 0;
             }
-            .nav-box {
-                color: black;
-                border: 1px solid black;
+
+            header {
+            text-align: center;
+            margin-bottom: 20px;
             }
-            .nav-box:hover {
-                border-color: rgba(62, 62, 78, 0.236);
-                transform: scale(1.05);
-                box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-            }
+
             nav {
-                border: 1px solid black;
-                padding: 10px;
-                margin: 10px auto;
-                background-color: slategray;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            background-color: slategray;
+            text-align: center;
+            }
+
+            .nav-bar a {
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            border: 1px solid black;
+            display: inline-block;
+            transition: color 1s;
+            }
+
+            .nav-box {
+            color: black;
+            border: 1px solid black;
+            }
+
+            .nav-box:hover {
+            border-color: rgba(62, 62, 78, 0.236);
+            transform: scale(1.05);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+            }
+
+            button:hover {
+            background-color: #555;
+            }
+
+
+            @media (max-width: 768px) {
+            header, main, footer {
+                width: 95%;
+            }
+
+            .nav-bar a {
+                display: block;
+                margin: 5px 0;
+            }
+            }
+
+            @media (max-width: 480px) {
+            header, main, footer {
+                width: 100%;
+            }
+
+            .nav-bar a {
+                padding: 8px;
+            }
             }
             .name {
                 color: black;
@@ -64,15 +110,25 @@
                 <a href="website_evaluations.html" class="nav-box">Website Evaluations</a>
                 <a href="tables.html" class="nav-box">Company Tables</a>
                 <a href="forms.html" class="nav-box">Company Forms</a>
+                <a href="emmet.html" class="nav-box">Emmet</a>
+                <a href="firstscripts.html" class="nav-box">FirstScripts</a>
+                <a href="project_overview.html" class="nav-box">Project Overview</a>
+                <a href="project/index.html" class="nav-box">Client Website</a>
+                <a href="byo.html" class="nav-box">BYO</a>
+                <a href="drawing.html" class="nav-box">Drawing</a>
+                <a href="slideshow.html" class="nav-box">Slideshow</a>
+                <a href="review1.html" class="nav-box">Peer Review 1</a>
+                <a href="review2.html" class="nav-box"> Peer Review 2</a>
             </nav>
             <nav class="nav-bar">
                 <a href="stuff/index.htm" target="_blank" class="nav-box">Crappy</a>
                 <a href="kvangbooks.com/index.html" target="_blank" class="nav-box">KVang Books</a>
+                <a href="hobby/index.html" target="_blank" class="nav-box">Hobby</a>
             </nav>
         </header>
         <main>
             <h2>Look. See. And Enjoy!</h2>
-            <p>I, <a href="introduction.html" class="name">Kei Vang</a> agree to abide by the terms of the course contract in my Fall 2024, ITIS 3135, Web App Design and Development with my instructor, Professor D.I. von Briesen. I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates. Signed: Kei Vang , 09/05/2024</p>
+            <p>I, <a href="introduction.html" class="name">Kei Vang</a> agree to abide by the terms of the course contract in my Fall 2024, ITIS 3135, Web App Design and Development with my instructor, Professor D.I. von Briesen. <p></p>I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class.<p></p> As such, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates. Signed: Kei Vang , 09/05/2024</p>
         </main>
         <footer>
             <p>Created by Vain Corporation 2024 ©</p>

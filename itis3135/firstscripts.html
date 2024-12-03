@@ -4,46 +4,41 @@
     <title>Kei Vang's ITIS 3135 FirstScripts</title>
     <meta charset="utf-8">
     <style>
-        body {
+            body {
             background-color: #99a3a3;
             color: #3f032f;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            }
 
-        header, main, footer {
+            header, nav, main, footer {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-        }
-
-        @media (max-width: 1200px) {
-            header, main, footer {
-                width: 95%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header, main, footer {
-                width: 100%;
             }
 
-            .nav-bar a {
-                display: block;
-                margin: 5px 0;
+            h2, h3 {
+            text-align: center;
+            margin: 10px 0;
             }
-        }
 
-        @media (max-width: 480px) {
-            header, main, footer {
-                width: 100%;
+            header {
+            text-align: center;
+            margin-bottom: 20px;
+            }
+
+            nav {
+            border: 1px solid black;
+            margin-bottom: 20px;
+            background-color: slategray;
+            text-align: center;
             }
 
             .nav-bar a {
-                padding: 8px;
-            }
-        }
-
-        .nav-bar a {
             color: black;
             padding: 10px;
             margin: 10px;
@@ -51,41 +46,60 @@
             border: 1px solid black;
             display: inline-block;
             transition: color 1s;
-        }
+            }
 
-        .nav-box {
+            .nav-box {
             color: black;
             border: 1px solid black;
+            }
+
+            .nav-box:hover {
+            border-color: rgba(62, 62, 78, 0.236);
+            transform: scale(1.05);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+            }
+
+            button:hover {
+            background-color: #555;
+            }
+
+
+            @media (max-width: 768px) {
+            header, main, footer {
+                width: 95%;
+            }
+
+            .nav-bar a {
+                display: block;
+                margin: 5px 0;
+            }
+            }
+
+            @media (max-width: 480px) {
+            header, main, footer {
+                width: 100%;
+            }
+
+            .nav-bar a {
+                padding: 8px;
+            }
+            }
+            .button-style {
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            border: 1px solid black;
+            display: inline-block;
+            transition: color 1s, transform 0.2s, box-shadow 0.2s;
+            background-color: slategray;
         }
 
-        .nav-box:hover {
+            .button-style:hover {
             border-color: rgba(62, 62, 78, 0.236);
             transform: scale(1.05);
             box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
         }
-
-        nav {
-            border: 1px solid black;
-            padding: 10px;
-            margin: 10px auto;
-            background-color: slategray;
-        }
-        .button-style {
-        color: black;
-        padding: 10px;
-        margin: 10px;
-        text-decoration: none;
-        border: 1px solid black;
-        display: inline-block;
-        transition: color 1s, transform 0.2s, box-shadow 0.2s;
-        background-color: slategray; /* Match the nav bar background */
-    }
-
-        .button-style:hover {
-        border-color: rgba(62, 62, 78, 0.236);
-        transform: scale(1.05);
-        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-    }
 
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -102,13 +116,20 @@
             <a href="website_evaluations.html" class="nav-box">Website Evaluations</a>
             <a href="tables.html" class="nav-box">Company Tables</a>
             <a href="forms.html" class="nav-box">Company Forms</a>
-            <a href="firstscripts.html" class="nav-box">First Scripts</a>
+            <a href="emmet.html" class="nav-box">Emmet</a>
+            <a href="firstscripts.html" class="nav-box">FirstScripts</a>
+            <a href="project_overview.html" class="nav-box">Project Overview</a>
+            <a href="project/index.html" class="nav-box">Client Website</a>
+            <a href="byo.html" class="nav-box">BYO</a>
+            <a href="drawing.html" class="nav-box">Drawing</a>
+            <a href="slideshow.html" class="nav-box">Slideshow</a>
+            <a href="review1.html" class="nav-box">Peer Review 1</a>
+            <a href="review2.html" class="nav-box"> Peer Review 2</a>
         </nav>
         <nav class="nav-bar">
             <a href="stuff/index.htm" target="_blank" class="nav-box">Crappy</a>
             <a href="kvangbooks.com/index.html" target="_blank" class="nav-box">KVang Books</a>
             <a href="hobby/index.html" target="_blank" class="nav-box">Hobby</a>
-            <a href="emmet.html" target="_blank">Emmet</a>
         </nav>
     </header>
     <main>
@@ -137,6 +158,11 @@
         <button id="favorite-polygon-btn" class="button-style">Favorite Polygon</button>
     </main>
     <footer>
+        <nav class="nav-bar">
+            <a href="https://webpages.charlotte.edu/kvang33/" target="_blank">CLT Page</a>
+            <a href="https://github.com/progchaMp672" target="_new">Github</a>
+            <a href="https://progchamp672.github.io/" target="_blank">GitHub.io</a>
+        </nav>
         <p>Created by Vain Corporation 2024 ©</p>
         <a id="validation-link-html">
             <img src="images/html_validation_button.gif" alt="html-button" class="html-button">

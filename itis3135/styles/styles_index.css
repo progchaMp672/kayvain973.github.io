@@ -65,3 +65,8 @@ nav {
     margin: 10px auto;
     background-color: slategray;
 }
+
+img {
+    max-width:100%; 
+    height:auto;
+}
