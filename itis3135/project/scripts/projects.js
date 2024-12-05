@@ -38,13 +38,15 @@ function populateGallery() {
     // Creates the image element and wrap it with the anchor tag
     const img = document.createElement("img");
     img.src = item.image;
-    img.alt = item.title;
-    
+
+    // Update the alt text conditionally
+    img.alt = item.title.includes("Keychain") ? "keychain" : item.title;
+
     // Append the image inside the anchor element
     anchorElement.appendChild(img);
 
     // Creates the title element
-    const title = document.createElement("h4");
+    const title = document.createElement("h3");
     title.textContent = item.title;
 
     // Creates the description element
@@ -53,8 +55,8 @@ function populateGallery() {
 
     // Apply all elements to the itemDiv
     itemDiv.appendChild(anchorElement);
-    itemDiv.appendChild(title); 
-    itemDiv.appendChild(description); 
+    itemDiv.appendChild(title);
+    itemDiv.appendChild(description);
 
     // Add the itemDiv to the gallery container
     galleryContainer.appendChild(itemDiv);

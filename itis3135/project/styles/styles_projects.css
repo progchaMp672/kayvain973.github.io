@@ -302,3 +302,22 @@ footer .footer-note {
     color: #333;
     margin-top: 5px;
 }
+
+/* Style to place the label above the textarea */
+label {
+    display: block;
+    margin-bottom: 8px; /* Adds space between the label and textarea */
+    font-weight: bold;
+}
+
+/* Style for the textarea */
+textarea {
+    width: 100%; /* Make the textarea full width */
+    max-width: 500px;
+}
+
+/* Style for the buttons */
+button {
+    margin-top: 10px; /* Adds space between buttons and textarea */
+    margin-right: 5px; /* Adds small gap between buttons */
+}
